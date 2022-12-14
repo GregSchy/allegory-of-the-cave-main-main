@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  animation: fadeIn 10s;
+}
+
+.play-button {
+  position: fixed;
+  bottom: 4rem;
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  z-index: 5;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
